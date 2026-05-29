@@ -1,6 +1,6 @@
 # Textadventure
 
-This project now includes a web version that can be hosted with GitHub Pages.
+This project is implemented mainly in Python.
 
 ## Run locally (Python CLI)
 
@@ -8,15 +8,6 @@ This project now includes a web version that can be hosted with GitHub Pages.
 python3 main.py
 ```
 
-## Run locally (GitHub Pages version)
+## Minimal HTML/CSS
 
-Open `/tmp/workspace/SwallowedLego/Textadventure/index.html` in your browser.
-
-## Deploy to GitHub Pages
-
-A workflow is included at `/tmp/workspace/SwallowedLego/Textadventure/.github/workflows/deploy-pages.yml`.
-
-To publish:
-1. Push to `main`.
-2. In the repository settings, set **Pages > Build and deployment > Source** to **GitHub Actions**.
-3. Wait for the **Deploy GitHub Pages** workflow to finish.
+`/tmp/workspace/SwallowedLego/Textadventure/index.html` and `styles.css` are kept only as a lightweight static page that points users to the Python entry point.

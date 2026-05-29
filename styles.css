@@ -1,63 +1,12 @@
-:root {
-  color-scheme: light dark;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 body {
   margin: 0;
-  min-height: 100vh;
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   background: #111827;
   color: #f9fafb;
-  display: grid;
-  place-items: center;
-  padding: 1rem;
 }
 
 .container {
-  width: min(32rem, 100%);
-}
-
-.title-card {
-  border: 3px solid #e5e7eb;
+  max-width: 40rem;
+  margin: 3rem auto;
   padding: 1rem;
-  text-align: center;
-  margin-bottom: 1rem;
-}
-
-.title-card h1,
-.title-card p {
-  margin: 0;
-}
-
-.title-card p {
-  margin-top: 0.25rem;
-}
-
-.menu {
-  display: grid;
-  gap: 0.75rem;
-}
-
-button {
-  width: 100%;
-  border: 2px solid #e5e7eb;
-  background: #1f2937;
-  color: inherit;
-  padding: 0.75rem 1rem;
-  font: inherit;
-  cursor: pointer;
-}
-
-button:hover,
-button:focus-visible {
-  background: #374151;
-}
-
-.message {
-  margin-top: 1rem;
-  min-height: 1.5rem;
 }
