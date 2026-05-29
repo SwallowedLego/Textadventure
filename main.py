@@ -1,16 +1,23 @@
 """Basic text adventure main menu."""
 
+MENU_WIDTH = 38
+
+
+def print_button(label: str) -> None:
+    print("  ╭" + "─" * MENU_WIDTH + "╮")
+    print(f"  │{label:^{MENU_WIDTH}}│")
+    print("  ╰" + "─" * MENU_WIDTH + "╯")
+
 
 def print_menu() -> None:
-    border = "+" + "-" * 32 + "+"
-    print(border)
-    print("|{:^32}|".format("TEXT ADVENTURE"))
-    print("|{:^32}|".format("Main Menu"))
-    print(border)
-    print("| 1) Start Game                  |")
-    print("| 2) Help                        |")
-    print("| 3) Quit                        |")
-    print(border)
+    print("╭" + "═" * MENU_WIDTH + "╮")
+    print(f"│{'TEXT ADVENTURE':^{MENU_WIDTH}}│")
+    print(f"│{'Main Menu':^{MENU_WIDTH}}│")
+    print("╰" + "═" * MENU_WIDTH + "╯")
+    print()
+    print_button("1. Start New Game")
+    print_button("2. Continue")
+    print_button("3. Quit")
 
 
 def run_menu() -> None:
@@ -18,9 +25,9 @@ def run_menu() -> None:
         print_menu()
         choice = input("Choose an option (1-3): ").strip()
         if choice == "1":
-            print("Your adventure begins soon...")
+            print("Starting a new adventure...")
         elif choice == "2":
-            print("Pick options by typing their number and pressing Enter.")
+            print("No saved adventure was found yet.")
         elif choice == "3":
             print("Goodbye, adventurer!")
             break
