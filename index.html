@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Text Adventure</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="container">
+      <header class="title-card" aria-label="Game title">
+        <h1>TEXT ADVENTURE</h1>
+        <p>Main Menu</p>
+      </header>
+
+      <section class="menu" aria-label="Main menu options">
+        <button type="button" data-choice="1">1. Start New Game</button>
+        <button type="button" data-choice="2">2. Continue</button>
+        <button type="button" data-choice="3">3. Quit</button>
+      </section>
+
+      <p id="message" class="message" aria-live="polite">
+        Choose an option to begin.
+      </p>
+    </main>
+
+    <script src="app.js"></script>
+  </body>
+</html>
